@@ -20,35 +20,13 @@ struct BottomArticleView: View {
                             .clipped()
                             .cornerRadius(10)
                     }else{
-                        ZStack{
-                            Rectangle()
-                                .frame(width: 120, height: 120)
-                                .foregroundStyle(.secondary)
-                                .opacity(0.3)
-                                .cornerRadius(10)
-                            Image(systemName: "photo")
-                                .resizable()
-                                .foregroundStyle(.secondary)
-                                .scaledToFit()
-                                .frame(height: 50)
-                        }
+                        PhotoTemplate(rectangleWidthFrame:120,rectangleHeightFrame: 120, imageFrame: 50)
                     }
                 }
                 .frame(width: 120, height: 120)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             }else{
-                ZStack{
-                    Rectangle()
-                        .frame(width: 120, height: 120)
-                        .foregroundStyle(.secondary)
-                        .opacity(0.3)
-                        .cornerRadius(10)
-                    Image(systemName: "photo")
-                        .resizable()
-                        .foregroundStyle(.secondary)
-                        .scaledToFit()
-                        .frame(height: 50)
-                }
+                PhotoTemplate(rectangleWidthFrame: 120, rectangleHeightFrame: 120, imageFrame: 50)
             }
                                             
             VStack(alignment: .leading){

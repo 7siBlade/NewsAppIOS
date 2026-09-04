@@ -22,37 +22,13 @@ struct TopArticleView: View {
                             .clipped()
                             .cornerRadius(10)
                     } else {
-                        ZStack{
-                            Rectangle()
-                                .frame(height: 150)
-                                .foregroundStyle(.secondary)
-                                .cornerRadius(10)
-                                .opacity(0.3)
-                                                            
-                            Image(systemName: "photo")
-                                .resizable()
-                                .foregroundStyle(.secondary)
-                                .scaledToFit()
-                                .frame(height: 100)
-                        }
+                        PhotoTemplate(rectangleHeightFrame: 150, imageFrame: 100)
                     }
                 }
                 .frame(width: 260, height: 150)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             }else{
-                ZStack{
-                    Rectangle()
-                        .frame(height: 150)
-                        .foregroundStyle(.secondary)
-                        .cornerRadius(10)
-                        .opacity(0.3)
-                                                    
-                    Image(systemName: "photo")
-                        .resizable()
-                        .foregroundStyle(.secondary)
-                        .scaledToFit()
-                        .frame(height: 100)
-                }
+                PhotoTemplate(rectangleHeightFrame: 150, imageFrame: 100)
             }
                                             
             VStack(alignment: .leading){
