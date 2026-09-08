@@ -1,0 +1,11 @@
+//
+//  Secrets.xcconfig
+//  NewsApp
+//
+//  Created by Vitaliy Pupchenko on 08.09.2026.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+API_KEY = 88267c6c78704dad9840f5dd174c37c1
